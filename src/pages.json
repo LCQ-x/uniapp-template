@@ -1,16 +1,84 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/shoppingCart/index",
+      "style": {
+        "navigationBarTitleText": "购物车",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "subPackages/mine",
+      "pages": [
+        {
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "订单",
+            "enablePullDownRefresh": false,
+            "backgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#C0C8D3",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./static/tarbbar/icon-home.png",
+        "selectedIconPath": "./static/tarbbar/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "./static/tarbbar/icon-category.png",
+        "selectedIconPath": "./static/tarbbar/icon-category-active.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/index",
+        "text": "购物车",
+        "iconPath": "./static/tarbbar/icon-shoppingCart.png",
+        "selectedIconPath": "./static/tarbbar/icon-shoppingCart-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "./static/tarbbar/icon-mine.png",
+        "selectedIconPath": "./static/tarbbar/icon-mine-active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "web-app",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  }
 }
