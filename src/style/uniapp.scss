@@ -1,0 +1,47 @@
+view,
+movable-area,
+movable-view,
+cover-view,
+text,
+navigator,
+swiper,
+swiper-item {
+  box-sizing: border-box;
+}
+
+movable-area {
+  width: initial;
+  height: initial;
+}
+
+text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+button {
+  border-radius: 0;
+}
+
+button::after {
+  display: none;
+}
+
+button[disabled],
+button[disabled]:not([type]) {
+  opacity: 0.6;
+}
+
+input {
+  min-height: initial;
+}
+
+[hidden] {
+  display: none !important;
+}
